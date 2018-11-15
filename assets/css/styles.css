@@ -1,0 +1,179 @@
+/*-------------
+ 	General
+-------------*/
+body {
+   font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+   background-image: url(../img/bulldog.jpg);
+   background-size:cover;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color:#88898B;
+	cursor: pointer;
+}
+
+a:hover{
+	color:#FF4850;
+}
+
+.btn{
+	color: #fff;
+	border-radius: 15px;
+	background-color:#FF4850;
+	text-align: center;
+	padding: 10px;
+	width: auto;
+}
+
+.btn:hover {
+	background-color:#CCC;
+}
+
+
+.redText {
+	color:#FF4850;
+}
+
+/*-------------
+ 	Header
+-------------*/
+
+.logo {
+	color:black;
+	font-size: 1.5em;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	padding: 35px 60px 0;
+	align-content: center;
+}
+
+nav {
+	display: flex;
+	font-weight: 400;
+	font-size: 1.2em;
+	list-style: none;
+}
+
+nav ul {
+	display: flex;
+	font-weight: 400;
+	font-size: 1.2em;
+	list-style: none;
+}
+nav li{
+	margin: 0px 15px;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+/*----------------
+ 	Body Section
+----------------*/
+
+
+section{
+	display: flex;
+	margin-top: 60px;
+	flex-direction: column;
+	align-items: baseline;
+	padding: 125px 60px;
+	justify-content: center;
+
+	width: 40%;
+}
+
+section h1 {
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+section p{
+	max-width: 800px;
+	margin-bottom: 35px;	
+	line-height: 1.6;
+	color:#88898B;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+
+/*----------------
+  Mobile Section
+----------------*/
+
+@media (max-width: 768px) {
+
+	body{
+		background-image: none;
+		background-color: #F0ECEE;
+	}
+    
+    header {
+    	display: flex;
+  		flex-direction: column;
+  		padding: 0 5px;
+  		font-size: .8em;
+    }
+
+    .logo {
+    	padding: 5px;
+    	font-weight: 600;
+    }
+
+    nav {
+  		flex-direction: column;
+  		margin-top: 10px;
+    }
+
+    nav ul{
+  		flex-direction: column;
+  		margin-top: 10px;
+    }
+
+    nav li{
+		margin: 0px 5px;
+		font-weight: 400;
+	}
+
+	.btn{
+		margin-top: 15px;
+		width: 100%;
+	}
+
+	section{
+		margin: auto;
+	    width: auto;
+	    padding:0 5px;
+	    font-size: .8em;
+	    
+	}
+	section h1{
+		margin: 30px 0 0 0 ;
+	}
+
+	section p{ 
+		font-size: .9em;
+		font-weight: 400;
+		margin: 15px 0 0 0 ;
+	}
+
+	section a {
+		font-size: 1.1em;
+	}
+
+}
